@@ -34,7 +34,7 @@ def button_callback(data):
     """
     pinValue  = data[2]
     pinNumber = data[1]
-    if pinValue:  # 1 = pressed, 0 = released
+    if pinValue == 1:  # 1 = pressed, 0 = released
         userSeq.append(pinNumber)
         sleep(0.1)  # debounce delay to avoid multiple counts for a single press
 
