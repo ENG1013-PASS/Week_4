@@ -18,7 +18,7 @@ outputPins = [8, 9, 10, 11, 12]  # LEDs     (RED, GREEN, BLUE, YELLOW, WHITE)
 redLight        = 8
 greenLight      = 9
 yellowLight     = 11
-pedestrianLight = 12   # WHITE — on = walk, off = don't walk
+pedestrianLight = 12   # WHITE
 pedestrianBtn   = 5    # D5
 
 # ── Timings ───────────────────────────────────────────────────────────────────
