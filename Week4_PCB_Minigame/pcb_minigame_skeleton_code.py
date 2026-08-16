@@ -109,7 +109,7 @@ def main():
         pass
         
     except KeyboardInterrupt:
-        print("User quit — the game has ended!")
+        print("User quit </3 the game has ended!")
 
     print(f"Level reached: {level}")
 
