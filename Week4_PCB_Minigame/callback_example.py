@@ -25,7 +25,7 @@ def button_callback(data):
 for pin in inputPins:
     board.set_pin_mode_digital_input(pin, callback=button_callback)
 
-print("Ready — press either button (Ctrl+C to quit)\n")
+print("Ready - press either button (Ctrl+C to quit)\n")
  
 try:
     while True:
