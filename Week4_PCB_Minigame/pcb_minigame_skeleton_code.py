@@ -106,7 +106,7 @@ def main():
 
     try:
         # TODO: implement the main game loop here, including sequence generation, display, user input validation, and timeout handling.
-
+        pass
         
     except KeyboardInterrupt:
         print("User quit — the game has ended!")
