@@ -89,8 +89,8 @@ def display_sequence(lightSeq):
 # ─────────────────────────────────────────────────────────────────────────────
 def main():
     """
-    Entry point and main game loop. Runs Simon Says from level 1 up to MAX_LEVEL.
-    Handles sequence generation, display, user input validation, and timeout.
+    Entry point and main game loop. Runs minigame from level 1 up to MAX_LEVEL.
+    Handles sequence generation, display, user button input validation, and timeout.
 
     Parameters:
         None
