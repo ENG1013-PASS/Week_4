@@ -56,7 +56,7 @@ Using what you know about callbacks and digital input/output pins:
 2. Use a **callback function** on D5 to detect when the button is pressed
 3. Implement the crossing sequence in `main`
 
-Think about: what should happen if the button is pressed *while the sequence is already running*? For now, it's fine to ignore it — but keep it in mind.
+Think about: what should happen if the button is pressed *while the sequence is already running*? For now, it's fine to ignore it, but keep it in mind.
 
 ---
 
