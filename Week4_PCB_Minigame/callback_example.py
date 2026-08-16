@@ -8,6 +8,7 @@ board = pymata4.Pymata4()
  
 inputPins  = [3, 4]    # buttons
  
+buttons_pressed  = []
  
 def button_callback(data):
     pinType   = data[0]  # pin type (2 = digital input)
@@ -20,6 +21,9 @@ def button_callback(data):
     print(f"Pin number     : {pinNumber}")
     print(f"Value          : {value}  ({'PRESSED' if value == 1 else 'RELEASED'})")
     print(f"Timestamp      : {timestamp:.2f}")
+
+    if value == 1:  # only record button presses, not releases
+        buttons_pressed.append(pinNumber)
  
  
 for pin in inputPins:
@@ -32,5 +36,6 @@ try:
         sleep(1)  # main thread just stays alive; callback does all the work
 except KeyboardInterrupt:
     print("\nQuitting...")
+    print(f"Buttons pressed during session: {buttons_pressed}")
     board.shutdown()
  
